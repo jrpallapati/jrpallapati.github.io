@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jacob R. Pallapati — Technical Lead · Java Backend Engineer</title>
+<meta name="description" content="Technical Lead and Java backend engineer with 15+ years building Spring Boot microservices, reactive APIs, and data platforms for Apple, Google, Cisco, and AT&T." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="cursor-glow" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">JP<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#impact">Impact</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="headshot reveal" aria-label="Headshot of Jacob Pallapati">
+      <div class="headshot-ring"></div>
+      <div class="headshot-inner">
+        <!-- Replace headshot.jpg in this folder with your photo; the initials show until it exists -->
+        <img src="headshot.jpg" alt="Jacob Pallapati" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+        <span class="headshot-initials">JP</span>
+      </div>
+    </div>
+    <p class="eyebrow reveal"><span class="dot"></span> Available for Bay Area roles · Milpitas, CA</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Jacob R.</span></span>
+      <span class="line"><span class="grad">Pallapati</span></span>
+    </h1>
+    <p class="hero-sub reveal">Technical Lead &amp; Java Backend Engineer building <span class="typed" data-words="reactive Spring microservices|high-volume data platforms|event-driven Kafka systems|multi-agent AI backends"></span><span class="caret">|</span></p>
+    <div class="hero-actions reveal">
+      <a href="#experience" class="btn btn-primary magnetic">View my work</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Get in touch</a>
+    </div>
+    <div class="logos reveal">
+      <span>Apple</span><span>Google</span><span>Cisco</span><span>AT&amp;T</span><span>Walgreens</span>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="num">01</span><h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="lead reveal">15+ years designing and shipping <strong>Spring Boot microservices, REST APIs, and high-volume data platforms</strong> for Apple, Google, Cisco, and AT&amp;T.</p>
+      <p class="reveal">I own architecture through production: driving design reviews, mentoring engineers, and cutting API latency and deployment risk on systems that serve hundreds of locations and millions of daily events. Lately I've been pairing that backend depth with Gen AI work, building multi-agent investigation platforms and RAG-powered search.</p>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" class="section">
+    <div class="section-head reveal">
+      <span class="num">02</span><h2>Impact</h2>
+    </div>
+    <div class="stats">
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="15">0</span>+</div><div class="stat-label">Years in Java &amp; Spring</div></div>
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="40">0</span>%</div><div class="stat-label">Faster APIs for Apple Retail</div></div>
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="500">0</span>+</div><div class="stat-label">Stores on automated deploys</div></div>
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="2">0</span>M+</div><div class="stat-label">Kafka events / day at AT&amp;T</div></div>
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="10">0</span>TB+</div><div class="stat-label">Monthly data in BigQuery</div></div>
+      <div class="stat tilt reveal"><div class="stat-num"><span class="count" data-to="99.9" data-dec="1">0</span>%</div><div class="stat-label">Deploy success rate</div></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-head reveal">
+      <span class="num">03</span><h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-line"><div class="timeline-fill"></div></div>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">10/2023 — Present</span><span class="job-co">Apple · San Jose</span></div>
+        <h3>Technical Lead — iRecon Financial Reconciliation</h3>
+        <ul>
+          <li>Onboard 15+ new financial accounts each quarter: data mappings, GL configurations, matching rules, and reporting specs.</li>
+          <li>Author and present Design Playback docs to cross-functional stakeholders for sign-off before build.</li>
+          <li>Python and Bash automation cut manual preprocessing of transaction imports by ~60%.</li>
+          <li>Oracle migrations through Dev, UAT, and Prod with zero production incidents; 99.9% deploy success.</li>
+        </ul>
+        <div class="tags"><span>Oracle</span><span>Python</span><span>Bash</span><span>CI/CD</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">01/2026 — 03/2026</span><span class="job-co">Wipro · San Jose</span></div>
+        <h3>Technical Lead — AI Incident Investigation Platform</h3>
+        <ul>
+          <li>Production multi-agent backend coordinating six AI agents (LangGraph4j) for log analysis, root-cause tracing, and escalation.</li>
+          <li>Semantic search with OpenAI embeddings in MongoDB Atlas over 100K+ log events, with streaming ingestion, dedup, and vectorization.</li>
+        </ul>
+        <div class="tags"><span>LangGraph4j</span><span>OpenAI</span><span>MongoDB Atlas</span><span>Vector Search</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">10/2025 — 11/2025</span><span class="job-co">San Jose</span></div>
+        <h3>Technical Lead — Candidate Search Chatbot</h3>
+        <ul>
+          <li>Led a plain-English candidate search chatbot on Claude 3.5 Sonnet via AWS Bedrock with a MongoDB vector store.</li>
+          <li>Built Oracle-to-MongoDB sync and coordinated an offshore delivery team.</li>
+        </ul>
+        <div class="tags"><span>AWS Bedrock</span><span>Claude</span><span>RAG</span><span>MongoDB</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">02/2022 — 10/2023</span><span class="job-co">Apple · San Jose</span></div>
+        <h3>Technical Lead — Hourly Investment Engine</h3>
+        <ul>
+          <li>Real-time scheduling platform for Apple Retail in 15-minute intervals across departments and roles.</li>
+          <li>Reactive APIs with Spring WebFlux and R2DBC cut response times ~40%.</li>
+          <li>Multi-environment CI/CD enabling automated deploys across 500+ retail locations at 99.5% uptime.</li>
+          <li>Specs for 20+ features (delivery ~30% faster); mentored 5 engineers and reviewed 100+ PRs.</li>
+        </ul>
+        <div class="tags"><span>Spring WebFlux</span><span>R2DBC</span><span>Reactive</span><span>CI/CD</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">04/2019 — 02/2022</span><span class="job-co">Google · San Jose</span></div>
+        <h3>Technical Lead — Data Integration Platform</h3>
+        <ul>
+          <li>Connected datacenter planning data with Anaplan for company-wide reporting.</li>
+          <li>BigQuery tables, views, and transforms over 10TB+ monthly data with sub-second queries.</li>
+          <li>Job grouping for 200+ pipeline dependencies with auto-recovery; ~35% fewer failures.</li>
+          <li>Terraform POC for Cloud Data Fusion pipelines; ~60% faster deploys.</li>
+        </ul>
+        <div class="tags"><span>BigQuery</span><span>GCP</span><span>Terraform</span><span>Data Fusion</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">04/2018 — 04/2019</span><span class="job-co">Walgreens · Chicago</span></div>
+        <h3>Software Consultant — Architecture &amp; Engineering</h3>
+        <ul>
+          <li>Spring Boot REST API and MySQL schema for a FedEx package-ops POC (1,000+ daily CRUD) on AWS Elastic Beanstalk / RDS at 99.8% uptime.</li>
+        </ul>
+        <div class="tags"><span>Spring Boot</span><span>AWS</span><span>MySQL</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">07/2017 — 04/2018</span><span class="job-co">AT&amp;T · San Ramon</span></div>
+        <h3>Technical Lead</h3>
+        <ul>
+          <li>Analytics and call-management tools for 50+ product lines and 100K+ daily calls.</li>
+          <li>Kafka pipeline moving 2M+ log entries/day into Cassandra at 99.9% delivery.</li>
+          <li>Log search and viewing tools that cut troubleshooting time ~70%.</li>
+        </ul>
+        <div class="tags"><span>Kafka</span><span>Cassandra</span><span>Java</span></div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta"><span class="job-date">08/2007 — 07/2017</span><span class="job-co">Cisco · San Jose / Milpitas</span></div>
+        <h3>Senior Developer · Engineer → Security Advocate → Scrum Master</h3>
+        <ul>
+          <li>REST APIs for Cisco quoting handling 10K+ quote requests a month.</li>
+          <li>8.5 years across WebEx On-Prem, WebEx Cloud, MeetingPlace, and Spark.</li>
+          <li>Automated WebEx site provisioning from 2 hours to 5 minutes; iframe integration used by 10K+ enterprise customers.</li>
+          <li>200+ security code reviews with zero critical production vulns; 95% sprint completion as Scrum Master.</li>
+        </ul>
+        <div class="tags"><span>REST</span><span>Security</span><span>Scrum</span><span>WebEx</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="num">04</span><h2>Skills</h2>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Java 21</span><span>Spring Boot</span><span>WebFlux</span><span>Kafka</span><span>Kubernetes</span><span>BigQuery</span><span>PostgreSQL</span><span>LangGraph4j</span><span>AWS</span><span>GCP</span><span>Terraform</span><span>Microservices</span>
+        <span>Java 21</span><span>Spring Boot</span><span>WebFlux</span><span>Kafka</span><span>Kubernetes</span><span>BigQuery</span><span>PostgreSQL</span><span>LangGraph4j</span><span>AWS</span><span>GCP</span><span>Terraform</span><span>Microservices</span>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card tilt reveal"><h4>Languages &amp; Frameworks</h4><p>Java 8/11/17/21, Spring Boot, Spring Data JPA / Hibernate, Spring MVC / WebFlux, Spring AI, JDBC / R2DBC, JavaScript, TypeScript, Python, SQL, Scala</p></div>
+      <div class="skill-card tilt reveal"><h4>Architecture &amp; Messaging</h4><p>Microservices, event-driven architecture with Apache Kafka, reactive programming, RESTful API design</p></div>
+      <div class="skill-card tilt reveal"><h4>Databases</h4><p>Oracle, PostgreSQL, MySQL, MongoDB, Cassandra, Elasticsearch, Google BigQuery</p></div>
+      <div class="skill-card tilt reveal"><h4>Cloud &amp; DevOps</h4><p>AWS (EC2, S3, CI/CD), GCP (BigQuery, Cloud Storage, Data Fusion), Azure, Terraform, Docker, Kubernetes, Git, Maven</p></div>
+      <div class="skill-card tilt reveal"><h4>Gen AI</h4><p>Multi-agent systems (LangGraph4j, LangChain), RAG, vector search, AWS Bedrock, OpenAI embeddings</p></div>
+      <div class="skill-card tilt reveal"><h4>Leadership</h4><p>Technical leadership, mentoring, design reviews, Agile / Scrum (CSM), CI/CD ownership, cross-team collaboration</p></div>
+    </div>
+
+    <div class="creds">
+      <div class="cred reveal"><h4>Education</h4>
+        <p><strong>M.Tech.</strong>, Electrical Instrumentation &amp; Control Systems — Calicut University</p>
+        <p><strong>B.Tech.</strong>, Electronics &amp; Communication Engineering — Sri Krishna Devaraya University</p>
+      </div>
+      <div class="cred reveal"><h4>Certifications</h4>
+        <p>Google Certified Professional Data Engineer</p>
+        <p>Certified Scrum Master (CSM) — Scrum Alliance</p>
+        <p>PGP in AI &amp; Machine Learning — UT Austin McCombs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-head reveal">
+      <span class="num">05</span><h2>Contact</h2>
+    </div>
+    <h3 class="contact-title reveal">Let's build something <span class="grad">reliable</span>.</h3>
+    <p class="reveal">Open to Technical Lead and Senior Java Backend roles in the Bay Area.</p>
+    <div class="hero-actions reveal">
+      <a href="mailto:jrp09010205@gmail.com" class="btn btn-primary magnetic">jrp09010205@gmail.com</a>
+      <a href="https://www.linkedin.com/in/jacob-pallapati-927a1726/" target="_blank" rel="noopener" class="btn btn-ghost magnetic" data-link="linkedin">LinkedIn</a>
+      <a href="https://github.com/jrpallapati" target="_blank" rel="noopener" class="btn btn-ghost magnetic" data-link="github">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Jacob R. Pallapati · Milpitas, CA</footer>
+<script src="script.js"></script>
+</body>
+</html>
